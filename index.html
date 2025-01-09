@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kaisei+Tokumin&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nunito+Sans:opsz,wght@6..12,200&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Document</title>
+</head>
+<body style="background-color: #E4BFB6; color: #C55652; font-family: 'Kaisei Tokumin', serif; position: relative; overflow-x: hidden;">
+    <style>
+        .main_img{
+            height: auto;
+            width: auto;
+        }
+        .nav{
+            padding: 0px 80px;
+        }
+        .rose2{
+            position: relative; 
+            top: -120px; 
+            right: 40px;
+            height: auto;
+            width: auto;
+        }
+        .rose1{
+            position: relative; 
+            top: -120px; 
+            left: 40px;
+            height: auto;
+            width: auto;
+        }
+        .round2{
+            background-color: #C55652; 
+            padding: 20px; 
+            color: #D9D9D9; 
+            display: flex; 
+            gap: 40px; 
+            border-radius: 100%; 
+            width: 250px; 
+            height: 250px;
+        }
+        .round1{
+            width: 320px; 
+            height: 320px; 
+            border: 1px solid #C55652; 
+            border-radius: 100%; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center;
+        }
+        .customh2{
+            font-size: 48px; 
+            font-weight: 400px;
+        }
+        .customp{
+            font-size: 12px; 
+            font-weight: 400px; 
+            position: relative; 
+            top: -45px; 
+            left: 15px;
+        }
+        .custom_container{
+            display: flex; 
+            justify-content: center;
+            position: relative;
+            top: 0px;
+        }
+        .image{
+            display: flex; 
+            justify-content: center; 
+            margin: 20px 0px;
+        }
+        .meet{
+            display: flex; 
+            justify-content: center; 
+            margin: 40px 0px; 
+            gap: 200px;
+        }
+        .card-body{
+            display: flex;
+            justify-content: center;
+            position: relative;
+            left: 40px;
+        }
+        .owl-nav {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            transform: translateY(-50%);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .owl-nav button {
+            color: #333 !important;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px !important;
+        }
+
+        .owl-nav button:hover {
+            background-color: #333;
+        }
+
+        .owl-nav .owl-prev {
+          position: absolute;
+          left: -80px;
+        }
+
+        .owl-nav .owl-next {
+          position: absolute;
+          right: 0px;
+        }
+        .carousel-img{
+            width: 350px;
+            height: 450px;
+        }
+        .gallery{
+            overflow: hidden;
+        }
+        .container{
+            margin-left: 20%;
+            width: 80%;
+        }
+        .custom_div1{
+            margin-top: 3%; 
+            display: flex; 
+            justify-content: center; 
+            background-color: #D9D9D9; 
+            width: 508px; 
+            height: 293px; 
+            transform: rotate(0.82deg);
+        }
+        .custom_div2{
+            margin-top: 3%; 
+            display: flex; 
+            justify-content: center; 
+            background-color: #D9D9D9; 
+            width: 508px; 
+            height: 293px; 
+            transform: rotate(-0.82deg);
+        }
+        .custom_pic{
+            width: 383px; 
+            margin-top: 20px; 
+            height: 259px;
+        }
+        .flex_box{
+            display: flex; 
+            justify-content: center;
+        }
+        .custom_content{
+            position: relative; 
+            left: -40px;
+        }
+        .rose{
+            width: auto;
+            height: auto;
+        }
+        .ac_box{
+            display: flex; 
+            justify-content: center; 
+            padding: 30px; 
+            gap: 80px;
+        }
+        .ac_img{
+            width: 400px; 
+            height: auto;
+            padding: 10px;
+        }
+        .custom_width{
+            width: 550px;
+            position: relative;
+            left: 0px;
+        }
+        .venue_box{
+            padding: 40px; 
+            background-color: #D9D9D9;
+        }
+        .bl{
+            position: absolute; 
+            bottom: 0px; 
+            left: 0px; 
+            z-index: 10;
+            width: auto;
+            height: auto;
+        }
+        .br{
+            position: absolute; 
+            bottom: 0px; 
+            right: 0px; 
+            z-index: 4;
+            width: auto;
+            height: auto;
+        }
+        @media (max-width: 720px) {
+            .main_img{
+                height: 200px;
+                width: 80%;
+            }
+            .nav{
+                padding: 0px 20px;
+            }
+            .rose2{
+                height: 250px;
+                width: 80px;
+                right: 0px;
+            }
+            .rose1{
+                height: 250px;
+                width: 80px;
+                left: 0px;
+            }
+            .round2{
+                width: 150px;
+                height: 150px;
+                gap: 20px;
+            }
+            .round1{
+                width: 200px;
+                height: 200px;
+            }
+            .customh2{
+                font-size: 32px;
+            }
+            .customp{
+                font-size: 16px;
+                left: 0px;
+                top: -30px;
+            }
+            .custom_container{
+                top: 100px;
+            }
+            .image{
+                margin: 100px 0px;
+            }
+            .meet{
+                display: block;
+            }
+            .container{
+                width: 70%;
+                margin-left: 15%;
+            }
+            .owl-nav .owl-prev{
+                left: -60px;
+            }
+            .owl-nav .owl-next{
+                right: -60px;
+            }
+            .custom_div1{
+                width: 350px;
+                height: 550px;
+                display: block;
+            }
+            .custom_div2{
+                width: 350px;
+                height: 550px;
+                display: block;
+            }
+            .custom_pic{
+                width: 320px;
+            }
+            .custom_content{
+                left: 0px;
+            }
+            .rose{
+                width: 20%;
+                height: 40%;
+            }
+            .ac_box{
+                display: block;
+            }
+            .ac_img{
+                height: 300px;
+            }
+            .custom_width{
+                width: 280px;
+                left: -40px;
+            }
+            .venue_box{
+                padding: 20px;
+            }
+            .bl{
+                width: 70px;
+                height: 80px;
+            }
+            .br{
+                width: 70px;
+                height: 80px;
+            }
+        }
+    </style>
+    <section style="height: 100vh; border-bottom: 1px solid #C55652; overflow: hidden;">
+        <div style="display: flex; font-weight: 400px; justify-content: space-between; border-bottom: 1px solid #C55652;" class="nav">
+            <p>October 18</p>
+            <h5>Rohan & Kaavia</h5>
+            <p>Location</p>
+        </div>
+        <div class="image">
+            <img src="main.png" alt="main image" class="main_img" />
+        </div>
+        <h1 style="font-size: 32px; font-weight: 400px; text-align: center;">Rohan weds Kaavia</h1>
+        <p style="text-align: center; position: relative; top: -20px;">on october 18</p>
+        <div style="display: flex; justify-content: center; position: relative; top: -20px;">
+            <button style="background-color: #C55652; color: #E7E7E7; padding: 6px 30px; border: none;">Save the date</button>
+        </div>
+        <div class="custom_container">
+            <img src="rose1.png" class="rose1" alt="left" />
+            <div class="round1">
+                <div class="round2">
+                    <div style="display: block;">
+                        <h2 class="customh2">05</h2>
+                        <p class="customp">Days</p>
+                    </div>
+                    <div style="display: block;">
+                        <h2 class="customh2">06</h2>
+                        <p class="customp">Mins</p>
+                    </div>
+                    <div style="display: block;">
+                        <h2 class="customh2">23</h2>
+                        <p class="customp">Secs</p>
+                    </div>
+                </div>
+            </div>
+            <img src="rose2.png" alt="right" class="rose2" />
+        </div>
+    </section>
+    <section style="padding: 20px 0px; border-bottom: 1px solid #C55652;">
+        <h2 class="customh2" style="text-align: center; padding: 10px 0px;">Meet the Bride and Groom</h2>
+        <div class="meet">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="bride.png" alt="Card image cap">
+                <div class="card-body" style="display: flex; justify-content: center;">
+                    <div>
+                        <div style="display: flex; justify-content: center; margin-top: 10px;">
+                            <p style="font-size: 16px; font-weight: 400px;">Groom&nbsp;&nbsp;&nbsp;</p>
+                            <h2 style="font-size: 32px; font-weight: 400px; position: relative; top: -25px;">Rohan</h2>
+                        </div>
+                        <p class="customp" style="margin-top: 10px; text-align: center;">t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="groom.png" alt="Card image cap">
+                <div class="card-body" style="display: flex; justify-content: center;">
+                    <div>
+                        <div style="display: flex; justify-content: center; margin-top: 10px;">
+                            <p style="font-size: 16px; font-weight: 400px;">Bride&nbsp;&nbsp;&nbsp;</p>
+                            <h2 style="font-size: 32px; font-weight: 400px; position: relative; top: -25px;">Kaavia</h2>
+                        </div>
+                        <p class="customp" style="margin-top: 10px; text-align: center;">t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="padding: 20px 0px;" class="gallery">
+        <h2 class="customh2" style="margin-left: 20%;">Our Gallery</h2>
+        <div class="owl-carousel container first-carousel">
+            <div><img src="car1.jpg" alt="Image 1" class="carousel-img"></div>
+            <div><img src="car2.jpg" alt="Image 2" class="carousel-img"></div>
+            <div><img src="car3.jpg" alt="Image 3" class="carousel-img"></div>
+            <div><img src="car4.jpg" alt="Image 4" class="carousel-img"></div>
+          </div>
+          <p class="customp" style="margin-left: 20%; margin-top: 70px; max-width: 316px;">t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
+    </section>
+    <section style="background-color: #D9D9D9; height: 100vh;">
+        <h2 class="customh2" style="margin-left: 20%;">Events .</h2>
+        <div class="owl-carousel container second-carousel">
+            <div>
+                <div class="card"  style="width: 400px; height: 450px; background-color: #C55652; border: 1px solid #E4BFB6;">
+                    <img class="card-img-top" src="car1.jpg" style="height: 50%;" alt="Card image cap">
+                    <div class="card-body" style="color: #E4BFB6; display: block;">
+                      <h5 class="card-title customh2" style="margin-top: 10px; margin-bottom: 20px;">Haldi</h5>
+                      <p class="card-text">October 17</p>
+                      <p class="card-text" style="margin-bottom: 10px;">From 4pm to 7pm Ist.</p>
+                      <p class="card-text" style="mask-border: 10px;">Venue: Taj Hotel Chennai.</p>
+                    </div>
+                  </div>
+            </div>
+            <div>
+                <div class="card"  style="width: 400px; height: 450px; background-color: #C55652; border: 1px solid #E4BFB6;">
+                    <img class="card-img-top" src="car2.jpg" style="height: 50%;" alt="Card image cap">
+                    <div class="card-body" style="color: #E4BFB6; display: block;">
+                      <h5 class="card-title customh2" style="margin-top: 10px; margin-bottom: 20px;">Haldi</h5>
+                      <p class="card-text">October 17</p>
+                      <p class="card-text" style="margin-bottom: 10px;">From 4pm to 7pm Ist.</p>
+                      <p class="card-text" style="mask-border: 10px;">Venue: Taj Hotel Chennai.</p>
+                    </div>
+                  </div>
+            </div>
+            <div>
+                <div class="card"  style="width: 400px; height: 450px; background-color: #C55652; border: 1px solid #E4BFB6;">
+                    <img class="card-img-top" src="car3.jpg" style="height: 50%;" alt="Card image cap">
+                    <div class="card-body" style="color: #E4BFB6; display: block;">
+                      <h5 class="card-title customh2" style="margin-top: 10px; margin-bottom: 20px;">Haldi</h5>
+                      <p class="card-text">October 17</p>
+                      <p class="card-text" style="margin-bottom: 10px;">From 4pm to 7pm Ist.</p>
+                      <p class="card-text" style="mask-border: 10px;">Venue: Taj Hotel Chennai.</p>
+                    </div>
+                  </div>
+            </div>
+            <div>
+                <div class="card"  style="width: 400px; height: 450px; background-color: #C55652; border: 1px solid #E4BFB6;">
+                    <img class="card-img-top" src="car4.jpg" style="height: 50%;" alt="Card image cap">
+                    <div class="card-body" style="color: #E4BFB6; display: block;">
+                      <h5 class="card-title customh2" style="margin-top: 10px; margin-bottom: 20px;">Haldi</h5>
+                      <p class="card-text">October 17</p>
+                      <p class="card-text" style="margin-bottom: 10px;">From 4pm to 7pm Ist.</p>
+                      <p class="card-text" style="mask-border: 10px;">Venue: Taj Hotel Chennai.</p>
+                    </div>
+                  </div>
+            </div>
+          </div>
+          <p class="customp" style="margin-left: 20%; margin-top: 70px; max-width: 316px;">t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
+    </section>
+    <section style="padding: 20px 0px;">
+        <h2 class="customh2" style="margin-left: 20%; margin-bottom: 70px;">Our Story .</h2>
+        <p class="customp" style="margin-left: 20%; max-width: 500px;">t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
+        <div class="flex_box">
+            <div class="custom_div1">
+                <div class="custom_content">
+                    <h2 class="customh2" style="margin-bottom: 80px; font-weight: 100; font-size: 32px;">How we met</h2>
+                    <p class="customp" style="text-align: right;">t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
+                </div>
+                <img src="how.png" alt="how" class="custom_pic" />
+            </div>
+        </div>
+        <div class="flex_box">
+            <div class="custom_div2">
+                <div class="custom_content">
+                    <h2 class="customh2" style="margin-bottom: 80px; font-weight: 100; font-size: 32px;">We fell in love</h2>
+                    <p class="customp" style="text-align: right;">t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
+                </div>
+                <img src="we.png" alt="we" class="custom_pic" />
+            </div>
+        </div>
+    </section>
+    <section style="background-color: #D9D9D9; height: 350px; width: 100%; overflow: hidden; position: relative;">
+        <div style="display: flex; justify-content: center;">
+            <div style="display: block; margin-top: 80px;">
+                <h2 class="customh2" style="margin-bottom: 30px;">Are you attending?</h2>
+                <div style="display: flex; justify-content: center;">
+                    <button style="padding: 10px 40px; border: none; background-color: #C55652; color: #D9D9D9;">yes I am attending</button>
+                </div>
+            </div>
+        </div>
+        <img src="are.png" class="rose" alt="rose" style="position: absolute; left: -20px; bottom: 0px;" />
+        <img src="you.png" class="rose" alt="rose" style="position: absolute; right: 20px; bottom: 0px;" />
+    </section>
+    <section>
+        <div class="ac_box">
+            <div style="margin-left: 60px;">
+                <h2 class="customh2" style="margin-bottom: 80px;">Accomadation .</h2>
+                <p class="customp custom_width">We’re excited to have you join us for our wedding celebrations! Accommodations have been arranged at the elegant Regal Grand Hotel, located near the venue in Chennai. Rooms are pre-booked for our guests, with check-in starting at 2:00 PM on [Date] and check-out at 11:00 AM on [Date].
+                    Shuttle services will be available between the hotel and the wedding venue at The Grand Sapphire Hall, ensuring a hassle-free commute. For those traveling by train or flight, pickups can be arranged from Chennai Central Railway Station or Chennai International Airport—please share your travel details in advance.
+                    If you need assistance or have special requests, feel free to contact our accommodation coordinator, Priya Sharma, at +91 9876543210 or priya.accommodation@gmail.com. We can’t wait to celebrate with you in Chennai!</p>
+            </div>
+            <div class="custom_div1 ac_img" style="position: relative; left: -30px;">
+                <img src="taj.png" alt="taj hotel" />
+            </div>
+        </div>
+        <div class="ac_box">
+            <div style="margin-left: 60px;">
+                <h2 class="customh2" style="margin-bottom: 80px;">Travel .</h2>
+                <p class="customp custom_width">For guests exploring the city, taxis and app-based services like Ola and Uber are readily available. Shuttle services between the hotel and wedding venue will also be provided for your convenience.
+                    If you have any specific travel requirements or need assistance with planning your journey, feel free to contact our travel coordinator, Ravi Kumar, at +91 9123456789 or ravi.travel@gmail.com. Safe travels, and we can’t wait to see you in Chennai!</p>
+            </div>
+            <div class="custom_div2 ac_img" style="position: relative; left: -30px;">
+                <img src="hotel.png" alt="taj hotel" />
+            </div>
+        </div>
+    </section>
+    <section style="margin-top: 30px; margin-bottom: 30px; display: flex; justify-content: center;">
+        <div>
+            <div>
+                <h2 class="customh2" style="position: relative; top: 55px; text-align: center;">Venue</h2>
+                <div class="venue_box">
+                    <img src="ecr.png" alt="ecr beach" />
+                    <div style="display: flex; justify-content: center;">
+                        <h2 style="font-size: 28px;">ECR beach, chennai</h2>
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex; justify-content: center;">
+                <p class="customp" style="margin-top: 80px; text-align: center; max-width: 383px;">For guests exploring the city, taxis and app-based services like Ola and Uber are readily available. Shuttle services between the hotel and wedding venue will also be provided for your convenience. If you have any specific travel requirements or need assistance with planning your journey, feel free to contact our travel coordinator, Ravi Kumar, at +91 9123456789 or ravi.travel@gmail.com. Safe travels, and we can’t wait to see you in Chennai!</p> 
+            </div>
+        </div>
+    </section>
+    <section style="background-color: #D9D9D9; height: 150px; width: 100%; overflow: hidden; position: relative; z-index: 10;">
+        <div style="display: flex; justify-content: center;">
+            <div style="display: block; margin-top: 10px;">
+                <h2 class="customh2" style="margin-bottom: 30px;">We are excited !!</h2>
+            </div>
+        </div>
+    </section>
+    <section>
+        <p class="customp" style="text-align: center; margin-top: 30px;">All rights reserved @esubhalekha.com</p>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $(".first-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        navText: [
+          '<i class="fa-solid fa-arrow-left"></i>',
+          '<i class="fa-solid fa-arrow-right"></i>'
+        ],
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 2
+          },
+          1000: {
+            items: 3
+          }
+        }
+      });
+
+      $(".second-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        navText: [
+          '<i class="fa-solid fa-arrow-left"></i>',
+          '<i class="fa-solid fa-arrow-right"></i>'
+        ],
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 2 
+          },
+          1000: {
+            items: 3
+          }
+        }
+      });
+    });
+  </script>
+  <img src="bl.png" alt="rose" class="bl" />
+  <img src="br.png" alt="rose" class="br" /> 
+</body>
+</html>
