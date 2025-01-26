@@ -58,7 +58,7 @@
             justify-content: center; 
             align-items: center;
             position: relative;
-            bottom: 0px;
+            bottom: 10px;
         }
         .customh2{
             font-size: 48px; 
@@ -84,10 +84,10 @@
         }
         .meet{
             display: flex; 
-            justify-content: center; 
-            margin: 40px 0px; 
+            justify-content: center;
             gap: 200px;
         }
+
         .card-body{
             display: flex;
             justify-content: center;
@@ -250,6 +250,9 @@
         .me{
             display: block;
         }
+        .cards{
+            display: block;
+        }
         @media (max-width: 720px) {
             .main_img{
                 height: 200px;
@@ -291,6 +294,7 @@
             }
             .meet{
                 display: block;
+                margin-left: -20px;
             }
             .container{
                 width: 70%;
@@ -335,8 +339,8 @@
                 height: 300px;
             }
             .custom_width{
-                width: 280px;
-                left: -40px;
+                width: 300px;
+                left: -50px;
             }
             .venue_box{
                 margin-left: 30px;
@@ -415,10 +419,11 @@
             </div>
         </div>
     </section>
-    <section style="padding: 20px 0px; border-bottom: 1px solid #C55652;">
+    <section style="padding: 20px 0px; border-bottom: 1px solid #C55652; display: flex; justify-content: center;">
+        <div>
         <h2 class="customh2" style="text-align: center; padding: 10px 0px;">Meet the Bride and Groom</h2>
         <div class="meet">
-            <div class="card" style="width: 18rem;">
+            <div class="cards" style="width: 20rem;">
                 <img class="card-img-top" src="bride.png" alt="Card image cap">
                 <div class="card-body" style="display: flex; justify-content: center;">
                     <div>
@@ -430,7 +435,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
+            <div class="cards" style="width: 20rem;">
                 <img class="card-img-top" src="groom.png" alt="Card image cap">
                 <div class="card-body" style="display: flex; justify-content: center;">
                     <div>
@@ -442,6 +447,7 @@
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
     <section style="padding: 20px 0px;" class="gallery">
@@ -541,7 +547,7 @@
     <section>
         <div class="ac_box">
             <div style="margin-left: 60px;">
-                <h2 class="customh2" style="margin-bottom: 80px;">Accomadation</h2>
+                <h2 class="customh2" style="margin-bottom: 80px; text-align: center;">Accomadation</h2>
                 <p class="customp custom_width">We’re excited to have you join us for our wedding celebrations! Accommodations have been arranged at the elegant Regal Grand Hotel, located near the venue in Chennai. Rooms are pre-booked for our guests, with check-in starting at 2:00 PM on [Date] and check-out at 11:00 AM on [Date].
                     Shuttle services will be available between the hotel and the wedding venue at The Grand Sapphire Hall, ensuring a hassle-free commute. For those traveling by train or flight, pickups can be arranged from Chennai Central Railway Station or Chennai International Airport—please share your travel details in advance.
                     If you need assistance or have special requests, feel free to contact our accommodation coordinator, Priya Sharma, at +91 9876543210 or priya.accommodation@gmail.com. We can’t wait to celebrate with you in Chennai!</p>
@@ -555,7 +561,7 @@
         </div>
         <div class="ac_box">
             <div style="margin-left: 60px;">
-                <h2 class="customh2" style="margin-bottom: 80px;">Travel</h2>
+                <h2 class="customh2" style="margin-bottom: 80px; text-align: center;">Travel</h2>
                 <p class="customp custom_width">For guests exploring the city, taxis and app-based services like Ola and Uber are readily available. Shuttle services between the hotel and wedding venue will also be provided for your convenience.
                     If you have any specific travel requirements or need assistance with planning your journey, feel free to contact our travel coordinator, Ravi Kumar, at +91 9123456789 or ravi.travel@gmail.com. Safe travels, and we can’t wait to see you in Chennai!</p>
             </div>
